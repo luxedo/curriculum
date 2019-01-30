@@ -1,0 +1,155 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{green}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Luiz}{Amaral}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Campinas - SP} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{~(19)~98409 9079}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{~(41)~98808 1625}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{luizamaral306@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{https://luxedo.github.io/}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{luiz-amaral-85351328}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{luxedo}                              % optional, remove / comment the line if not wanted
+% \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Formação}
+\cventry{2011--2013}{Mestrado}{UFPR}{Curitiba}{}{Mestrado em Engenharia e Ciências dos Materiais}  % arguments 3 to 6 can be left empty
+\cventry{2005--2010}{Graduação}{UFPR}{Curitiba}{}{Bacharelado em Física}
+
+% \section{Master thesis}
+% \cvitem{title}{\emph{Title}}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+\section{Experiência}
+% \subsection{Vocational}
+\cventry{2016--2018}{Cientista de Dados}{Dom Rock}{Campinas}{}{Análise e exploração de dados estruturados e não estruturados\newline{}%
+Desenvolvimento web
+\begin{itemize}%
+\item Criação e manutenção de pipelines de ETL
+\item Análise, processamento e OCR de imagens
+\item Criação de um algoritmo de posicionamento de imagens baseado em características morfológicas
+\item Experiência com modelos estatísticos (regressões polinomiais, métodos de ensemble, estatística Bayesiana, SVMs, redes neurais)
+\item Migrou o modelo antigo de controle de versão para o git
+\end{itemize}}
+\cventry{2013--2016}{Pesquisador/Desenvolvedor}{Instituto de Biologia Molecular do Paraná}{Curitiba}{}{Pesquisa em colóides, emulsões e eletrospray para síntese de beads e fios magnéticos\newline{}Prototipagem de um dispositivo de diagnóstico para chips Lateral Flow baseado em imagem
+\begin{itemize}%
+\item Possui uma patente de microesferas magnéticas
+\item Criação do hardware e software do dispositivo de diagnóstico em python:
+  \begin{itemize}%
+  \item Desenvolvimento Workflow do aparelho
+  \item Criação do algorítmo de calibração da câmera
+  \item Criação do algorítmo detecção e posicionamento dos chips
+  \item Criação do algorítmo de classificação dos resultados
+  \item Desenvolvimento da interface gráfica em PyQt
+  \item Publicou bibliotecas para controlar os CIs MCP3008 e ADS1115 em Python
+  \item Possui um registro de software para o aparelho
+  \end{itemize}
+\end{itemize}}
+% \subsection{Miscellaneous}
+\cventry{2008--2013}{Pesquisador}{Universidade Federal do Paraná}{Curitiba}{}{Pesquisa em superfícies e materiais
+\begin{itemize}%
+  \item Pesquisou a modificação de polímeros por plasma de nitrogênio para selagem de dispositivos lab-on-a-chip
+  \item Pesquisou eletromolhabilidade para controlar o fluxo de dispositivos lab-on-a-chip
+  \item Patenteou uma check valve vedada com ferrofluido que foi o objeto da dissertação de mestrado
+  \item Desenvolveu uma biblioteca e interface gráfica para controlar motores de passo usando um ULN2803A e um Raspberry Pi
+\end{itemize}}
+
+\section{Línguas}
+\cvitemwithcomment{Nativo}{\textbf{Português}}{}
+\cvitemwithcomment{Avançado}{\textbf{Inglês}}{}
+\cvitemwithcomment{Básico}{\textbf{Espanhol}}{}
+
+\section{Conhecimento Técnico}
+\cvitem{Linguagens Fluentes}{Python, HTML/CSS/Javascript/Node}
+\cvitem{Linguagens Nível Básico}{Java, C, Scala, Octave, PHP, Ruby}
+\cvitem{Bancos de Dados}{MongoDB, SQL, Elasticsearch}
+\cvitem{Bibliotecas Python}{OpenCV, Pandas, Numpy, Scipy, Scikit-Learn, Jupyter, Tensorflow, NLTK, Matplotlib, Processing, Scrapy, Requests, Flask}
+\cvitem{Outros}{GNU/Unix, Bash, Git, Docker}
+
+\section{MOOCs}
+\cvdoubleitem
+  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/CWFKK68KQP9X}{Machine Learning}}
+  {Coursera}{\href{https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/976353~15102768/pdf}{Cryptography I}}
+\cvdoubleitem
+  {Coursera}{\href{https://www.coursera.org/account/accomplishments/specialization/YHKBDQ77K2GB}{Programa de cursos integrados Machine Learning}}
+  {Edx}{\href{https://www.edx.org/course/probability-and-statistics-in-data-science-using-python}{DSE210x Probability and Statistics in Data Science using Python}}
+\cvdoubleitem
+  {Edx}{\href{https://www.edx.org/course/using-python-for-research}{Using Python for Research}}
+  {Coursera}{\href{https://www.coursera.org/learn/algorithms-part1}{Algorithms, Part I}}
+\cvdoubleitem
+  {Edx}{\href{https://www.edx.org/course/i-heart-stats-learning-love-statistics-notredamex-soc120x}{I Heart Stats: Learning to Love Statistics}}
+  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/RY4DLN2Q6MW3}{\footnotesize{Neural Networks and Deep Learning}}}
+\cvdoubleitem
+  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/6SEWP83D96QM}{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization}}
+  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/BBTE8KJC6WRU}{Structuring Machine Learning Projects}}
+
+\section{Projetos Open Source}
+
+\cvitem{Projetos Web}{\href{https://luxedo.github.io/two-neurons-worm/}{Two Neurons Worm \scriptsize{https://luxedo.github.io/two-neurons-worm/}}}
+\cvitem{}{\href{https://calcumlator.herokuapp.com/}{CalcuMLator \scriptsize{https://calcumlator.herokuapp.com/}}}
+\cvitem{}{\href{https://tetris-almost-from-scratch.firebaseapp.com/}{Tetris Almost From Scratch \scriptsize{https://tetris-almost-from-scratch.firebaseapp.com/}}}
+\cvitem{}{\href{https://asteroids-almost-from-scratch.herokuapp.com/}{Asteroids Almost From Scratch \scriptsize{https://asteroids-almost-from-scratch.herokuapp.com/}}}
+\cvitem{}{\href{https://luxedo.github.io/spacewar-almost-from-scratch/}{Spacewar Almost From Scratch \scriptsize{https://luxedo.github.io/spacewar-almost-from-scratch/}}}
+\cvitem{}{\href{https://luxedo.github.io/pong-almost-from-scratch/}{Pong Almost From Scratch \scriptsize{https://luxedo.github.io/pong-almost-from-scratch/}}}
+\cvitem{Pacotes NPM}{\href{https://www.npmjs.com/package/prettycode}{prettycode \scriptsize{https://www.npmjs.com/package/prettycode}}}
+\cvitem{}{\href{https://www.npmjs.com/package/spiky-clouds}{spiky-clouds \scriptsize{https://www.npmjs.com/package/spiky-clouds}}}
+\cvitem{Ruby Gems}{\href{https://rubygems.org/gems/jekyll-theme-potato-hacker}{jekyll-theme-potato-hacker \scriptsize{https://rubygems.org/gems/jekyll-theme-potato-hacker}}}
+\cvitem{\footnotesize{Pacotes Python}}{\href{https://pypi.org/project/fakeRPiGPIO/}{fakeRPiGPIO \scriptsize{https://pypi.org/project/fakeRPiGPIO/}}}
+\cvitem{}{\href{https://pypi.org/project/mcp3008/}{mcp3008 \scriptsize{https://pypi.org/project/mcp3008/}}}
+\cvitem{}{\href{https://pypi.org/project/RPistepper/}{RPistepper \scriptsize{https://pypi.org/project/RPistepper/}}}
+
+\clearpage
+
+\end{document}
+
+%% end of file `template.tex'.
