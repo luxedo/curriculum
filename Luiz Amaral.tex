@@ -24,7 +24,7 @@
 %\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{Luiz}{Amaral}
+\name{Luiz Eduardo}{Amaral}
 \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
 \address{Campinas - SP} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{~(19)~98409 9079}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
@@ -72,37 +72,43 @@
 
 \section{Experiência}
 % \subsection{Vocational}
+\cventry{2019--Atual}{Pesquisador em Aprendizado de Máquina}{Tarvos}{Campinas}{}{Pesquisa e desenvolvimento de modelos de detecção de objetos
+	\begin{itemize}%
+		\item Desenvolveu um protótipo para monitoramento de pragas agrícolas baseado em imagem
+		\item Montou um banco de imagens de mariposas consideradas pragas agrícolas
+		\item Treinou modelos baseados na arquitetura Mask R-CNN para detecção de mariposas
+	\end{itemize}}
 \cventry{2016--2018}{Cientista de Dados}{Dom Rock}{Campinas}{}{Análise e exploração de dados estruturados e não estruturados\newline{}%
-Desenvolvimento web
-\begin{itemize}%
-\item Criação e manutenção de pipelines de ETL
-\item Análise, processamento e OCR de imagens
-\item Criação de um algoritmo de posicionamento de imagens baseado em características morfológicas
-\item Experiência com modelos estatísticos (regressões polinomiais, métodos de ensemble, estatística Bayesiana, SVMs, redes neurais)
-\item Migrou o modelo antigo de controle de versão para o git
-\end{itemize}}
+	Desenvolvimento web
+	\begin{itemize}%
+		\item Criação e manutenção de pipelines de ETL
+		\item Análise, processamento e OCR de imagens
+		\item Criação de um algoritmo de posicionamento de imagens baseado em características morfológicas
+		\item Experiência com modelos estatísticos (regressões polinomiais, métodos de ensemble, estatística Bayesiana, SVMs, redes neurais)
+		\item Migrou o modelo antigo de controle de versão para o git
+	\end{itemize}}
 \cventry{2013--2016}{Pesquisador/Desenvolvedor}{Instituto de Biologia Molecular do Paraná}{Curitiba}{}{Pesquisa em colóides, emulsões e eletrospray para síntese de beads e fios magnéticos\newline{}Prototipagem de um dispositivo de diagnóstico para chips Lateral Flow baseado em imagem
-\begin{itemize}%
-\item Possui uma patente de microesferas magnéticas
-\item Criação do hardware e software do dispositivo de diagnóstico:
-  \begin{itemize}%
-  \item Desenvolvimento Workflow do aparelho
-  \item Criação do algorítmo de calibração da câmera
-  \item Criação do algorítmo detecção e posicionamento dos chips
-  \item Criação do algorítmo de classificação dos resultados
-  \item Desenvolvimento da interface gráfica em PyQt
-  \item Publicou bibliotecas para controlar os CIs MCP3008 e ADS1115 em Python
-  \item Possui um registro de software para o aparelho e uma patente para o sistema
-  \end{itemize}
-\end{itemize}}
+	\begin{itemize}%
+		\item Possui uma patente de microesferas magnéticas
+		\item Criação do hardware e software do dispositivo de diagnóstico:
+		      \begin{itemize}%
+			      \item Desenvolvimento Workflow do aparelho
+			      \item Criação do algorítmo de calibração da câmera
+			      \item Criação do algorítmo detecção e posicionamento dos chips
+			      \item Criação do algorítmo de classificação dos resultados
+			      \item Desenvolvimento da interface gráfica em PyQt
+			      \item Publicou bibliotecas para controlar os CIs MCP3008 e ADS1115 em Python
+			      \item Possui um registro de software para o aparelho e uma patente para o sistema
+		      \end{itemize}
+	\end{itemize}}
 % \subsection{Miscellaneous}
 \cventry{2008--2013}{Pesquisador}{Universidade Federal do Paraná}{Curitiba}{}{Pesquisa em superfícies e materiais
-\begin{itemize}%
-  \item Pesquisou a modificação de polímeros por plasma de nitrogênio para selagem de dispositivos lab-on-a-chip
-  \item Pesquisou eletromolhabilidade para controlar o fluxo de dispositivos lab-on-a-chip
-  \item Patenteou uma check valve vedada com ferrofluido que foi o objeto da dissertação de mestrado
-  \item Desenvolveu uma biblioteca e interface gráfica para controlar motores de passo usando um ULN2803A e um Raspberry Pi
-\end{itemize}}
+	\begin{itemize}%
+		\item Pesquisou a modificação de polímeros por plasma de nitrogênio para selagem de dispositivos lab-on-a-chip
+		\item Pesquisou eletromolhabilidade para controlar o fluxo de dispositivos lab-on-a-chip
+		\item Patenteou uma check valve vedada com ferrofluido que foi o objeto da dissertação de mestrado
+		\item Desenvolveu uma biblioteca e interface gráfica para controlar motores de passo usando um ULN2803A e um Raspberry Pi
+	\end{itemize}}
 
 \section{Línguas}
 \cvitemwithcomment{Nativo}{\textbf{Português}}{}
@@ -110,31 +116,30 @@ Desenvolvimento web
 \cvitemwithcomment{Básico}{\textbf{Espanhol}}{}
 
 \section{Conhecimento Técnico}
-\cvitem{Linguagens Fluentes}{Python, HTML/CSS/Javascript/Node}
-\cvitem{Linguagens Nível Básico}{Java, C, Scala, Octave, PHP, Ruby}
+\cvitem{\small{Linguagens de Programação}}{Python, HTML/CSS/Javascript/Node}
 \cvitem{Bancos de Dados}{MongoDB, SQL, Elasticsearch}
 \cvitem{Bibliotecas Python}{OpenCV, Pandas, Numpy, Scipy, Scikit-Learn, Jupyter, Tensorflow, NLTK, Matplotlib, Processing, Scrapy, Requests, Flask}
 \cvitem{Outros}{GNU/Unix, Bash, Git, Docker}
 
-\section{Cursos}
-\cvdoubleitem
-  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/CWFKK68KQP9X}{\small{Machine Learning}}}
-  {Coursera}{\href{https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/976353~15102768/pdf}{\small{Cryptography I}}}
-\cvdoubleitem
-  {Coursera}{\href{https://www.coursera.org/account/accomplishments/specialization/YHKBDQ77K2GB}{\small{Machine Learning Specialization (4 cursos)}}}
-  {Edx}{\href{https://www.edx.org/course/probability-and-statistics-in-data-science-using-python}{\small{DSE210x Probability and Statistics in Data Science using Python}}}
-\cvdoubleitem
-  {Edx}{\href{https://www.edx.org/course/using-python-for-research}{\small{Using Python for Research}}}
-  {Coursera}{\href{https://www.coursera.org/learn/algorithms-part1}{\small{Algorithms, Part I}}}
-\cvdoubleitem
-  {Edx}{\href{https://www.edx.org/course/i-heart-stats-learning-love-statistics-notredamex-soc120x}{\scriptsize{I Heart Stats: Learning to Love Statistics}}}
-  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/RY4DLN2Q6MW3}{\footnotesize{Neural Networks and Deep Learning}}}
-\cvdoubleitem
-  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/6SEWP83D96QM}{\small{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization}}}
-  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/BBTE8KJC6WRU}{\footnotesize{Structuring Machine Learning Projects}}}
-\cvdoubleitem
-  {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/5A8K3WTQHAZF}{\small{Convolutional Neural Networks}}}
-  {}{}
+% \section{Cursos}
+% \cvdoubleitem
+%   {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/CWFKK68KQP9X}{\small{Machine Learning}}}
+%   {Coursera}{\href{https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/976353~15102768/pdf}{\small{Cryptography I}}}
+% \cvdoubleitem
+%   {Coursera}{\href{https://www.coursera.org/account/accomplishments/specialization/YHKBDQ77K2GB}{\small{Machine Learning Specialization (4 cursos)}}}
+%   {Edx}{\href{https://www.edx.org/course/probability-and-statistics-in-data-science-using-python}{\small{DSE210x Probability and Statistics in Data Science using Python}}}
+% \cvdoubleitem
+%   {Edx}{\href{https://www.edx.org/course/using-python-for-research}{\small{Using Python for Research}}}
+%   {Coursera}{\href{https://www.coursera.org/learn/algorithms-part1}{\small{Algorithms, Part I}}}
+% \cvdoubleitem
+%   {Edx}{\href{https://www.edx.org/course/i-heart-stats-learning-love-statistics-notredamex-soc120x}{\scriptsize{I Heart Stats: Learning to Love Statistics}}}
+%   {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/RY4DLN2Q6MW3}{\footnotesize{Neural Networks and Deep Learning}}}
+% \cvdoubleitem
+%   {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/6SEWP83D96QM}{\small{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization}}}
+%   {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/BBTE8KJC6WRU}{\footnotesize{Structuring Machine Learning Projects}}}
+% \cvdoubleitem
+%   {Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/5A8K3WTQHAZF}{\small{Convolutional Neural Networks}}}
+%   {}{}
 
 \section{Projetos Open Source}
 
@@ -152,6 +157,26 @@ Desenvolvimento web
 \cvitem{}{\href{https://pypi.org/project/RPistepper/}{RPistepper \scriptsize{https://pypi.org/project/RPistepper/}}}
 
 \clearpage
+
+% \setlength{\parindent}{6.5ex}
+% 
+% \begin{flushright}
+% 	Campinas, 06 de novembro de 2019
+% \end{flushright}
+% \bigskip
+% Prezados professores, \smallskip \\
+% meu nome é Luiz Eduardo Amaral, tenho trinta e dois anos e sou de Curitiba. \smallskip \\
+% \indent Embora tenha estudado Física na graduação e engenharia e ciências dos materiais no mestrado, a área de ciência de dados sempre me foi muito cara. \smallskip \\
+% \indent Resolver problemas sempre foi algo que me motivou, e na área de ciência de dados eu encontrei algo pelo que me interessei enormemente. \smallskip \\
+% \indent Mudei-me para Campinas no início de 2017, por conta de uma oportunidade de emprego na Dom Rock, uma start up na qual conheci pessoas cujos interesses se assemelhavam aos meus, e na qual eu fui capaz de entender um pouco mais sobre a área e sobre meus próprios interesses e motivações. Trabalhei com eles até agosto de 2018. No início de 2019 entrei na Tarvos, uma empresa focada em pesquisa e desenvolvimento de tecnologia de monitoramento de pragas agrícolas, onde tive a oportunidade de criar um protótipo para monitoramento de mariposas baseado em imagens. \smallskip \\
+% \indent Este curso, que será oferecido no ano que vem por vocês, parece-me uma ótima oportunidade para dar continuidade aos meus estudos na área, porque acredito que ele me auxiliará no melhoramento da minha capacidade de análise e modelagem de dados e permitirá que eu trabalhe com profissionais capacitados na área de ciência de dados. \smallskip \\
+% \indent Futuramente, tenho interesse, também, em permanecer na área como doutorando, e a Unicamp seria um ótimo espaço para isso, pois a oferta diversificada de cursos e professores me daria uma visão mais ampla e aprofundada da área. \smallskip \\
+% \indent Gostaria de antemão de agradecer pela disponibilidade de tempo para análise da minha candidatura e fico à disposição para sanar possíveis dúvidas. \smallskip \\
+% 
+% \begin{flushright}
+% 	Atenciosamente,
+% 	Luiz Eduardo Amaral.
+% \end{flushright}
 
 \end{document}
 
