@@ -1,2 +1,8 @@
 # Curriculum
-Meu *Currículum Vitae* feito a partir do template [moderncv](https://github.com/xdanaux/moderncv).
+Meus *Currículum Vitae*
+
+## Compilando
+```bash
+cd <versão>
+pdflatex --output-directory pdf/2021_06 2021_06/2021_06_Luiz_Amaral.tex
+```
