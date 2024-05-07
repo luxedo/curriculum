@@ -1,0 +1,188 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{green}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Luiz Eduardo}{Amaral}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{Campinas - SP} % optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{~(41)~98808 1625}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+% \phone[fixed]{+2~(345)~678~901}
+% \phone[fax]{+3~(456)~789~012}
+\email{luizamaral306@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{https://luxedo.github.io/}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{luiz-nishino-amaral}                        % optional, remove / comment the line if not wanted
+% \social[xing]{john\_doe}                           % optional, remove / comment the line if not wanted
+% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+\social[github]{luxedo}                              % optional, remove / comment the line if not wanted
+% \social[gitlab]{jdoe}                              % optional, remove / comment the line if not wanted
+% \social[skype]{jdoe}                               % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanteds
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{:Slaps Table: There must be a better way\begin{flushright}—Raymond Hettinger\end{flushright}}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+% \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Perfil}
+
+\setlength{\parskip}{0.5em}
+\textit {Desenvolvedor Sênior apaixonado por transformar dados em soluções inovadoras} \par
+\setlength{\parindent}{2em}
+
+Ao longo de 10 anos, aprimorei minhas habilidades em programação, com foco no desenvolvimento e na manutenção de sensores baseados em visão computacional. Minha paixão reside em unir inteligência artificial ao mundo físico, criando soluções inovadoras e eficientes.
+
+Minha experiência abrangente em ciências de dados, programação de sistemas embarcados, desenvolvimento de software e programação web me permite transformar ideias em projetos completos, desde a concepção até a implementação final. Essa vasta experiência me torna um parceiro ideal para os mais diversos desafios.
+
+Sou referência técnica nas equipes em que atuo, compartilhando conhecimento e auxiliando na resolução de problemas. Costumo realizar sessões de mentoria, ajudando outros desenvolvedores a aprimorarem suas habilidades e a crescerem profissionalmente. Minha paixão por entregar softwares de alta qualidade se traduz em testes abrangentes e implementação de pipelines de CI/CD. Essas abordagens garantem integração facilitada de novos desenvolvedores, agilidade, qualidade e confiabilidade nas entregas.
+
+No meu tempo livre gosto de contribuir com projetos Open Source, tendo pacotes publicados em Python, Ruby, JavaScript, Rust e Elixir. Além disso, tenho contribuições em projetos no Google, MDN, e scikit-learn, e no código de diversos outros repositórios.
+\setlength{\parindent}{0em}
+
+\section{Experiência}
+% \subsection{Vocational}
+\cventry{2019--Atual}
+{Cientista de Dados Sênior}
+{Tarvos}
+{Campinas}{}
+{Desenvolvimento de Solução Inovadora para Detecção de Pragas Agrícolas:}
+
+\begin{itemize}%
+  \item \textbf{Liderei o desenvolvimento do produto principal da Tarvos:} o software de uma armadilha inteligente de detecção de pragas agrícolas.
+  \item \textbf{Implementei modelos de deep learning com métricas de performance superior a 95\%} para contagem automática de pragas em imagens, otimizando o processo de monitoramento e controle de infestações.
+  \item \textbf{Criei datasets de imagens} com mais de 100.000 fotos originais para detecção de pragas.
+  \item \textbf{Reduzi custos operacionais} através do desenvolvimento de sistemas embarcados eficientes em C, C++ e Rust para execução dos modelos de detecção.
+  \item \textbf{Aprimorei a experiência do usuário} com a criação de modelos clássicos baseados em imagem para a operação intuitiva da armadilha.
+  \item \textbf{Liderei a refatoração completa da plataforma web da empresa}, aumentando a escalabilidade, segurança e confiabilidade da plataforma.
+  \item \textbf{Criei o setor de QA de software}, que padronizou a garantia de qualidade do software web.
+  \item \textbf{Desenvolvi dispositivos de teste automatizados} para garantir a qualidade e confiabilidade da produção das armadilhas.
+  \item \textbf{Implementei modelos estatísticos avançados} para determinar a taxa de captura das armadilhas, a distância ideal entre elas e prever infestações de pragas com alta precisão.
+  \item \textbf{Criei modelos de relatórios dinâmicos} e os publiquei em uma arquitetura de microserviços para facilitar a tomada de decisões estratégicas.
+
+\end{itemize}
+
+\vspace{1em}
+\cventry
+{2016--2018}
+{Cientista de Dados Pleno}
+{Dom Rock}
+{Campinas}{}
+{Transformei Dados em Insights Valiosos para Otimização de Processos:}
+
+\begin{itemize}%
+  \item \textbf{Aumentei a eficiência operacional} através da análise e exploração de dados estruturados e não estruturados, extraindo insights acionáveis para aprimorar os processos da empresa.
+  \item \textbf{Desenvolvi e mantive pipelines de ETL robustos} para garantir a integridade, qualidade e confiabilidade dos dados utilizados nas análises.
+  \item \textbf{Implementei um algoritmo de posicionamento de imagens inovador} baseado em características morfológicas para automatizar tarefas complexas e otimizar o tempo de trabalho.
+  \item \textbf{Aprimorei a tomada de decisões} com modelos estatísticos avançados, como regressões polinomiais, métodos de ensemble, estatística Bayesiana, SVMs e redes neurais.
+  \item \textbf{Introduzi o Git como ferramenta de controle de versão} para garantir a organização, rastreabilidade e colaboração na equipe de desenvolvimento.
+  \item \textbf{Revitalizei o sistema web da empresa} com a criação de novas telas e visualizações intuitivas, aprimorando a experiência do usuário e a acessibilidade das informações.
+\end{itemize}
+
+\vspace{1em}
+\cventry
+{2013--2016}
+{Pesquisador/Desenvolvedor de Sistemas}
+{Instituto de Biologia Molecular do Paraná}
+{Curitiba}{}
+{Inovação na Biotecnologia com Solução Pioneira de Diagnóstico:}
+
+\begin{itemize}%
+  \item \textbf{Desenvolvi um dispositivo de diagnóstico inovador para chips Lateral Flow} com tecnologia de imagem, revolucionando a análise de amostras biológicas.
+  \item \textbf{Aprimorei a precisão e confiabilidade do diagnóstico} com algoritmos avançados de calibração de câmera, detecção de chips, classificação de resultados e processamento de imagens.
+  \item \textbf{Criei uma interface gráfica intuitiva em PyQt} para facilitar a operação do dispositivo e a interpretação dos resultados.
+  \item \textbf{Compartilhei meu conhecimento com a comunidade} através da publicação de bibliotecas para controle de CIs em Python, promovendo a colaboração e o avanço da pesquisa.
+  \item \textbf{Obtive patente para microesferas magnéticas}, demonstrando meu potencial para criar soluções inovadoras e protegendo minha propriedade intelectual.
+\end{itemize}
+
+\section{Conhecimento Técnico}
+\cvitem{\small{Linguagens de Programação}}{Python, C/C++, Rust, Elixir, Bash, HTML, CSS, Javascript, Typescript, R, Octave, Assembly, \LaTeX}
+\cvitem{Sistemas}{Raspberry Pi, ESP32 (ESP-IDF), STM32 (Cube MX, CMake), Raspberry Pi Pico, Arduino, SAM D21}
+\cvitem{Bibliotecas}{TensorFlow, Pandas, Numpy, Scipy, Scikit-Learn, Jupyter, DVC, OpenCV, NLTK, Matplotlib, Seaborn, Unittest, Ruff, Pre-commit, Scrapy, Requests, Flask, Selenium, Puppeteer, Express, Jest, Mocha, Chai, Eslint, Dotenv, Axios, Handlebars, Twilio, Zod}
+\cvitem{Google Cloud}{Compute Engine, Kubernetes, Firebase, Cloud Functions, Storage, Network, DNS}
+\cvitem{Bancos de Dados}{MongoDB, SQL, Firestore, Elasticsearch}
+\cvitem{Outros}{GNU/Unix, Git, Docker, GDB, CI/CD, TDD, E2E Testing, Agile/Scrum/XP}
+
+\section{Habilidades Interpessoais}
+\cvitem{Comunicação Eficaz}{Me comunico com clareza, concisão e persuasão, adaptando a linguagem ao público e contexto.}
+\cvitem{Trabalho em Equipe}{Sou colaborativo, proativo e contribuo para o sucesso do grupo por meio de excelentes habilidades interpessoais.}
+\cvitem{Liderança}{Inspiro e motivo equipes para alcançar objetivos em comum com decisões estratégicas e assertivas.}
+\cvitem{Resolução de Problemas}{Abordo problemas de forma analítica e colaborativa, buscando soluções criativas e eficazes com pensamento crítico e empatia.}
+\cvitem{Adaptabilidade}{Me adapto rapidamente a novas situações e me ajusto a diferentes ambientes e culturas devido à minha flexibilidade e ao respeito à diversidade.}
+
+\section{Formação}
+\cventry{2021--2021}{Pós-Graduação}{Unicamp}{Campinas}{}{Mineração de Dados Complexos}  % arguments 3 to 6 can be left empty
+\cventry{2011--2013}{Mestrado}{UFPR}{Curitiba}{}{Mestrado em Engenharia e Ciências dos Materiais}  % arguments 3 to 6 can be left empty
+\cventry{2005--2010}{Graduação}{UFPR}{Curitiba}{}{Bacharelado em Física}
+
+\section{Cursos}
+\cvdoubleitem
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/specialization/certificate/Q3RT6P3BF5XU}{Deep Learning Specialization}}
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/specialization/YHKBDQ77K2GB}{Machine Learning Specialization}}
+\cvdoubleitem
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/CWFKK68KQP9X}{\small{Machine Learning}}}
+{Coursera}{\href{https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/976353~15102768/pdf}{\small{Agile Project Management}}}
+\cvdoubleitem
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/5A8K3WTQHAZF}{\small{Convolutional Neural Networks}}}
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/certificate/ZTZR93WKX3JV}{\small{Agile with Atlassian Jira}}}
+\cvdoubleitem
+{Coursera}{\href{https://www.coursera.org/api/legacyCertificates.v1/spark/statementOfAccomplishment/976353~15102768/pdf}{\small{Cryptography I}}}
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/BBTE8KJC6WRU}{\footnotesize{Structuring Machine Learning Projects}}}
+\cvdoubleitem
+{Edx}{\href{https://www.edx.org/course/using-python-for-research}{\small{Using Python for Research}}}
+{Coursera}{\href{https://www.coursera.org/learn/algorithms-part1}{\small{Algorithms, Part I}}}
+\cvdoubleitem
+{Edx}{\href{https://www.edx.org/course/i-heart-stats-learning-love-statistics-notredamex-soc120x}{\scriptsize{I Heart Stats: Learning to Love Statistics}}}
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/RY4DLN2Q6MW3}{\footnotesize{Neural Networks and Deep Learning}}}
+\cvdoubleitem
+{Coursera}{\href{https://www.coursera.org/account/accomplishments/verify/6SEWP83D96QM}{\scriptsize{Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization}}}
+{Edx}{\href{https://www.edx.org/course/probability-and-statistics-in-data-science-using-python}{\scriptsize{DSE210x Probability and Statistics in Data Science using Python}}}
+
+\section{Línguas}
+\cvitemwithcomment{Nativo}{\textbf{Português}}{}
+\cvitemwithcomment{Avançado}{\textbf{Inglês}}{}
+\cvitemwithcomment{Intermediário}{\textbf{Espanhol}}{}
+
+
+\section{Portfólio e Projetos Open Source}
+Confira meus projetos em \url{http://luxedo.github.io/}. Tenho uma história pra cada um! \\
+\textcolor{gray}{:wq}
+
+\clearpage
+
+\end{document}
+
+%% end of file `template.tex'.
